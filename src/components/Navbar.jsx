@@ -89,7 +89,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <nav className="flex justify-center items-center gap-8 -mt-3">
+        <nav className="flex justify-between items-center gap-8 -mt-3">
           <div className=" flex items-center">
             <Logo />
           <div className="flex items-center">{navLink}</div>
