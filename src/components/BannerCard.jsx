@@ -4,7 +4,7 @@ import { IoSearch } from "react-icons/io5";
 
 const BannerCard = () => {
   return (
-    <div className="max-w-[1100px] w-full mx-auto  px-4">
+    <div className="max-w-[1170px] w-full mx-auto  px-4">
       {/* Top Tabs */}
       <div className="w-full sm:w-[300px] h-[54px] bg-[#ffffff] rounded-t-[12px] flex justify-between p-2 text-center text-[#181A20] ">
         <div>
