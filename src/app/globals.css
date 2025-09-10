@@ -27,7 +27,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .n-link{
-  padding: 0 17px 15px ;
+  padding: 0 14px 13px ;
 font-size: 14px;
 color: #ffffff;
 font-weight: 600;
@@ -59,4 +59,9 @@ background-color: #ffffff;
 .btn-gradient:hover {
   background: linear-gradient(to right, #3e6efe, #79aff9);
   color: #ffffff;
+}
+.mySwiper .swiper-pagination {
+  position: relative !important; 
+  margin-top: 16px; 
+  text-align: center; 
 }

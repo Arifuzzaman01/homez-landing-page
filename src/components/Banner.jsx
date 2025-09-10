@@ -12,7 +12,7 @@ const Banner = () => {
       }}
     >
       <Navbar />
-      <div className="-mb-10">
+      <div className="-mb-12 ">
         <BannerCard/>
       </div>
     </div>
