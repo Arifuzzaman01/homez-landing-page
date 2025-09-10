@@ -34,6 +34,7 @@ font-weight: 600;
 display: flex;
 align-items: center;
 margin-right: 5px;
+margin-top: 10px;
 
 }
 .n-s-link{
@@ -43,4 +44,19 @@ display: block;
 width: 8px;
 height: 4px;
 background-color: #ffffff;
+}
+
+.btn-gradient {
+
+  
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  color: #181A20;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #3e6efe, #79aff9);
+  color: #ffffff;
 }
