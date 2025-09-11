@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { FaRegUserCircle } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/io";
 import Logo from "./Logo";
+import Button from "./Button";
 
 const Navbar = () => {
   const pathName = usePathname();
@@ -88,16 +89,10 @@ const Navbar = () => {
           <Link href="#">Register</Link>
           <Link
             href="#"
-            className="hidden sm:flex btn-gradient ml-2 w-[160px] h-[44px] bg-[#ffffff] text-[#181A20] rounded-[12px] justify-center items-center"
+            className="hidden sm:flex btn-gradient ml-2  text-[#181A20] rounded-[12px] justify-center items-center"
           >
-            Add Property
-            <Image
-              src="/arrow-Icon.png"
-              width={14}
-              height={14}
-              alt="arrow-icon"
-              className="ml-2"
-            />
+           <Button btnDes=" Add Property" nav={true}/>
+           
           </Link>
         </div>
       </div>

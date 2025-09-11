@@ -98,15 +98,13 @@ const ApartmentType = () => {
           {properties.map((property) => (
             <SwiperSlide key={property.id}>
               <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
-                <div className="relative">
+                <div className="">
                   <img
                     src={property.image}
                     alt={property.title}
                     className="w-[210px] h-[190px]  object-cover"
                   />
-                  <span className="absolute top-2 left-2 bg-[#EB6753] text-white text-xs font-bold px-3 py-1 rounded">
-                    FEATURED
-                  </span>
+                  
                 </div>
                 <div className="p-4">
                   <h3 className="text-base md:text-lg font-semibold text-[#181A20]">
