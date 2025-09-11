@@ -2,7 +2,7 @@ import {  Poppins } from "next/font/google";
 import "./globals.css";
 
 
-const poppins = Poppins({
+export const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"], // choose weights you need
   variable: "--font-poppins",          // custom CSS variable
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light">
       <body
-        className={`${poppins.variable} antialiased font-poppins max-w-[1920px] mx-auto`}
+        className={`${poppins.className} antialiased font-poppins max-w-[1920px] mx-auto`}
       >
         {children}
       </body>

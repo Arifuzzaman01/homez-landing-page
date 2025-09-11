@@ -48,7 +48,7 @@ const Navbar = () => {
 
   return (
     <div className="max-w-[1200px] mx-auto px-4 static top-0">
-      <div className="flex justify-between items-center gap-7 py-3">
+      <div className="flex justify-center items-center gap-7 py-3">
         {/* Left: Logo & Dropdown */}
         <div className="flex items-center gap-4">
           {/* Mobile menu button */}
