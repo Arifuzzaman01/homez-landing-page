@@ -11,8 +11,9 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1a1a1a] text-gray-300 py-16 px-4 md:px-20">
-      <section className="max-w-xl mx-auto text-center">
+    <footer className="bg-[#1a1a1a] text-gray-300 py-16 px-4 md:px-20 ">
+      <div className="max-w-[1200px] mx-auto">
+        <section className="max-w-xl mx-auto text-center">
         <h2 className="text-white text-3xl md:text-4xl font-bold mb-2">
           Subscribe Our Newsletter
         </h2>
@@ -122,6 +123,7 @@ const Footer = () => {
             <Link href="#"><FaLinkedinIn /></Link>
         </aside>
       </section>
+      </div>
     </footer>
   );
 };

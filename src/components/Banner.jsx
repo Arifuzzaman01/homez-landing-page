@@ -5,15 +5,16 @@ import BannerCard from "./BannerCard";
 const Banner = () => {
   return (
     <div
-      className="max-w-[1920px] max-h-[900px] h-screen flex flex-col justify-between"
+      className=" max-h-[900px] h-screen relative "
       style={{
         backgroundImage: "url('/banner-images.png')",
-       
       }}
     >
-      <Navbar />
-      <div className="-mb-12 ">
-        <BannerCard/>
+      <div className="max-w-[1200px] mx-auto ">
+        <Navbar />
+        <div className=" absolute -bottom-12 ">
+          <BannerCard />
+        </div>
       </div>
     </div>
   );

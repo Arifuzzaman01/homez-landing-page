@@ -15,7 +15,7 @@ const TrustedClients = () => {
   ];
 
   return (
-    <section className="">
+    <section className="max-w-[1200px] mx-auto">
       <div className=" mt-28 mx-auto text-center mb-8">
         <p className="text-gray-500 text-sm">Trusted by the world's best</p>
       </div>

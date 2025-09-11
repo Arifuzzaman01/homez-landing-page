@@ -45,7 +45,7 @@ const Apartment = () => {
   ];
 
   return (
-    <div className="max-w-[1200px] mx-auto pt-[115px] pb-[100px] px-4 ">
+    <div className="max-w-[1200px] mx-auto py-[100px]  px-4 ">
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold text-[#181A20]">
           Explore Apartment Types

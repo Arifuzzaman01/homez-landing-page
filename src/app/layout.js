@@ -2,7 +2,12 @@ import {  Poppins } from "next/font/google";
 import "./globals.css";
 
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600"],variable: "--font-poppins",    });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // choose weights you need
+  variable: "--font-poppins",          // custom CSS variable
+  display: "swap",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light">
       <body
-        className={`${poppins.variable} antialiased font-poppins `}
+        className={`${poppins.variable} antialiased font-poppins max-w-[1920px] mx-auto`}
       >
         {children}
       </body>
