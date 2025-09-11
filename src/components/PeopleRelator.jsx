@@ -17,7 +17,7 @@ const PeopleRelator = () => {
       name: "Ali Tufan",
       title: "Developer",
       price: "$4,600",
-      des: "“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti ”",
+      des: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti ",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ const PeopleRelator = () => {
       name: "Albert Flores",
       title: "Designer",
       price: "$5,800",
-      des: "“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae”",
+      des: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae",
     },
     {
       id: 3,
@@ -49,7 +49,7 @@ const PeopleRelator = () => {
       name: "Ali Tufan",
       title: "Designer",
       price: "$8,900",
-      des: "“Sed ut perspiciatis unde omnis iste natus error sitvoluptatem accusantium doloremque laudantium,totam rem aperiam, eaque ipsa quae”",
+      des: "Sed ut perspiciatis unde omnis iste natus error sitvoluptatem accusantium doloremque laudantium,totam rem aperiam, eaque ipsa quae",
     },
 
     {
@@ -110,7 +110,7 @@ const PeopleRelator = () => {
                       </p>
                     </div>
                   </div>
-                  <p className="text-[#181A20] text-[15px]">{people.des}</p>
+                  <p className="text-[#181A20] text-[15px]">{people.des.slice(0,123)}</p>
                 </div>
                 <img
                   src="/SVG.png"

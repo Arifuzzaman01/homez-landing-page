@@ -1,6 +1,7 @@
 import Apartment from "@/components/Apartment";
 import ApartmentType from "@/components/ApartmentType";
 import Banner from "@/components/Banner";
+import Blog from "@/components/Blog";
 import BuyToSell from "@/components/BuyToSell";
 import Discover from "@/components/Discover";
 import Feature from "@/components/Feature";
@@ -19,6 +20,7 @@ export default function Home() {
       <BuyToSell/>
       <PeopleRelator/>
       <Discover/>
+      <Blog/>
     </div>
   );
 }
