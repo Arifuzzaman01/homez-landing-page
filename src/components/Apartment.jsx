@@ -40,7 +40,7 @@ const Apartment = () => {
       title: "Bungalow",
       properties: "1 Property",
       image: "https://i.ibb.co.com/VWgKRXBy/type6-jpg.png",
-      span: "col-span-2", // বড় করার জন্য
+      span: "col-span-2", 
     },
   ];
 
@@ -59,7 +59,7 @@ const Apartment = () => {
         {types.map((type) => (
           <div
             key={type.id}
-            className={`relative rounded-xl overflow-hidden group ${type.span || ""}`}
+            className={`relative rounded-xl overflow-hidden group md:${type.span || ""}`}
           >
             <Image
               src={type.image}

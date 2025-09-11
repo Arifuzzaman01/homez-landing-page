@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import TrustedClients from './TrustedClients';
 
 const Blog = () => {
   const blogPosts = [
@@ -97,7 +98,7 @@ const Blog = () => {
             </div>
           
           {/* Smaller blog posts */}
-          <div className="md:col-span-2  xl:col-span-1 grid gap-5 grid-rows-5 lg:grid-cols-2 xl:grid-cols-1 ">
+          <div className="md:col-span-2  xl:col-span-1 grid gap-5 xl:grid-rows-5 lg:grid-cols-2 xl:grid-cols-1 ">
             <div className="flex row-span-2 bg-white   overflow-hidden transition-transform duration-300 hover:scale-[1.02] items-center  animate-pulse-loop">
               <div className="flex-shrink-0 max-w-[170px]  max-h-[140px  overflow-hidden mr-4">
                 <img
@@ -129,6 +130,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
+      <TrustedClients/>
     </section>
   );
 };

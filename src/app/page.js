@@ -5,6 +5,7 @@ import Blog from "@/components/Blog";
 import BuyToSell from "@/components/BuyToSell";
 import Discover from "@/components/Discover";
 import Feature from "@/components/Feature";
+import Footer from "@/components/Footer";
 import Help from "@/components/Help";
 import PeopleRelator from "@/components/PeopleRelator";
 
@@ -21,6 +22,7 @@ export default function Home() {
       <PeopleRelator/>
       <Discover/>
       <Blog/>
+      <Footer/>
     </div>
   );
 }

@@ -106,7 +106,7 @@ const ApartmentType = () => {
                   <img
                     src={property.image}
                     alt={property.title}
-                    className="w-[210px] h-[190px]  object-cover"
+                    className="w-full h-[190px]  object-cover"
                   />
                 </div>
                 <div className="p-4">

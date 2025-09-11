@@ -97,7 +97,7 @@ const Feature = () => {
 
         {/* Swiper Slider */}
         <Swiper
-          slidesPerView={3}
+          
           spaceBetween={20}
           pagination={{ clickable: true }}
           navigation={true}
