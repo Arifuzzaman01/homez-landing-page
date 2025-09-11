@@ -1,10 +1,11 @@
 import Apartment from "@/components/Apartment";
 import ApartmentType from "@/components/ApartmentType";
 import Banner from "@/components/Banner";
-import Button from "@/components/Button";
 import BuyToSell from "@/components/BuyToSell";
+import Discover from "@/components/Discover";
 import Feature from "@/components/Feature";
 import Help from "@/components/Help";
+import PeopleRelator from "@/components/PeopleRelator";
 
 
 export default function Home() {
@@ -16,7 +17,8 @@ export default function Home() {
       <Help />
       <ApartmentType/>
       <BuyToSell/>
-      <Button />
+      <PeopleRelator/>
+      <Discover/>
     </div>
   );
 }

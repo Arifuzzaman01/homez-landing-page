@@ -3,13 +3,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-// import required modules
-import { Pagination, Navigation } from "swiper/modules";
+
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 const ApartmentType = () => {
   const properties = [
@@ -18,7 +17,7 @@ const ApartmentType = () => {
       image: "https://i.ibb.co.com/XZdpyjsX/Link-1.png",
       title: "House ",
       price: "$4,600",
-      proper: "7"
+      proper: "7",
     },
     {
       id: 2,
@@ -39,7 +38,7 @@ const ApartmentType = () => {
       image: "https://i.ibb.co.com/BK7qGQwp/house1.jpg",
       title: "Villa",
       price: "$3,200",
-    proper: "4",
+      proper: "4",
     },
     {
       id: 5,
@@ -48,14 +47,14 @@ const ApartmentType = () => {
       price: "$8,900",
       proper: "2",
     },
-    
+
     {
       id: 6,
       image: "https://i.ibb.co.com/7Jm5z7Dn/Link.png",
       title: "Apartment",
       price: "$5,800",
       proper: "3",
-    }
+    },
   ];
 
   return (
@@ -86,13 +85,18 @@ const ApartmentType = () => {
           spaceBetween={20}
           pagination={{ clickable: true }}
           navigation={true}
+          autoplay={{
+            delay: 3000, // 3s delay
+            disableOnInteraction: false, // keeps autoplay running after interaction
+          }}
           breakpoints={{
             0: { slidesPerView: 1 },
             640: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
-            1024: { slidesPerView: 5 },
+            1024: { slidesPerView: 4 },
+            1280: { slidesPerView: 5 },
           }}
-          modules={[Pagination, Navigation]}
+          modules={[Pagination, Navigation, Autoplay]}
           className="mySwiper"
         >
           {properties.map((property) => (
@@ -104,13 +108,14 @@ const ApartmentType = () => {
                     alt={property.title}
                     className="w-[210px] h-[190px]  object-cover"
                   />
-                  
                 </div>
                 <div className="p-4">
                   <h3 className="text-base md:text-lg font-semibold text-[#181A20]">
                     {property.title}
                   </h3>
-                  <h5 className="text-gray-700">{property.proper} Properties</h5>
+                  <h5 className="text-gray-700">
+                    {property.proper} Properties
+                  </h5>
                 </div>
               </div>
             </SwiperSlide>
