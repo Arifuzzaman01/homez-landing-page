@@ -32,7 +32,7 @@ Smooth hover effects & gradient buttons.
 
 Deployed live on Vercel → homez-landing-page.vercel.app
 
-##How to Run Locally
+## How to Run Locally
 
 # Clone repo
 git clone <repo-url>
